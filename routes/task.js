@@ -1,6 +1,7 @@
 import  express  from "express"; 
 import { deleteTask, getMytasks, newTask, updateTask } from "../controllers/task.js";
 import { isAuthenticated } from "../middlewares/auth.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 

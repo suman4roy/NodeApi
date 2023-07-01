@@ -1,6 +1,7 @@
 import { User } from "../models/User.js";
 import bcrypt from "bcrypt";
-import { Jwt } from "jsonwebtoken";
+import pkg from 'jsonwebtoken';
+const { jwt } = pkg;
 import { sendCookie } from "../utils/features.js";
 export const getAllusers =  async(req,res)=>{}
 
