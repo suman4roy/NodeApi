@@ -17,7 +17,8 @@ export const register = async(req, res, next)=>{
             message:"User Already exist",
         });
     }
-
+    
+    console.log(req.body);
 
     const hashedPassword = await bcrypt.hash(password, 10);
     user = await User.create({name, email, password:hashedPassword});
